@@ -1,0 +1,5 @@
+hook.Add( "HUDShouldDraw", "DefautHUD", function( name )
+    if ( name == "CHudHealth" or name == "CHudBattery" ) then
+        return false
+    end
+end)
